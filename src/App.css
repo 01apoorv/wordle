@@ -11,6 +11,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
 }
 
 .game-board{ 
@@ -32,13 +40,31 @@
 
 .message {
   position: absolute;
-  bottom: 280px;
-  font-size: 20px; 
+  top: 100px;
+  font-size: 20px;
+  text-align: center;
+  text-align-last: center;
 }
 
-#button {
+#row1 {
   position: absolute;
   bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#row2 {
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+#row3 {
+  position: absolute;
+  bottom: 125px;
+  display: flex;
+  justify-content: center;
 }
 
 #buttonStyle {

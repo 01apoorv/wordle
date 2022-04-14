@@ -154,41 +154,51 @@ const App = () => {
     <div className="message">
       <p>{currMsg}</p>
     </div>
-    <div id="button">
-      <Row>
-        <Button onClick={() => update("Q")} as={Col} id="buttonStyle" variant="secondary" size="lg">Q</Button>
-        <Button onClick={() => update("W")} as={Col} id="buttonStyle" variant="secondary" size="lg">W</Button>
-        <Button onClick={() => update("E")} as={Col} id="buttonStyle" variant="secondary" size="lg">E</Button>
-        <Button onClick={() => update("R")} as={Col} id="buttonStyle" variant="secondary" size="lg">R</Button>
-        <Button onClick={() => update("T")} as={Col} id="buttonStyle" variant="secondary" size="lg">T</Button>
-        <Button onClick={() => update("Y")} as={Col} id="buttonStyle" variant="secondary" size="lg">Y</Button>
-        <Button onClick={() => update("U")} as={Col} id="buttonStyle" variant="secondary" size="lg">U</Button>
-        <Button onClick={() => update("I")} as={Col} id="buttonStyle" variant="secondary" size="lg">I</Button>
-        <Button onClick={() => update("O")} as={Col} id="buttonStyle" variant="secondary" size="lg">O</Button>
-        <Button onClick={() => update("P")} as={Col} id="buttonStyle" variant="secondary" size="lg">P</Button>
+    <div id="row3">
+      <Row className="justify-content-center">
+        <Col>
+          <Button onClick={() => update("Q")} id="buttonStyle" variant="secondary" size="sm">Q</Button>
+          <Button onClick={() => update("W")} id="buttonStyle" variant="secondary" size="sm">W</Button>
+          <Button onClick={() => update("E")} id="buttonStyle" variant="secondary" size="sm">E</Button>
+          <Button onClick={() => update("R")} id="buttonStyle" variant="secondary" size="sm">R</Button>
+          <Button onClick={() => update("T")} id="buttonStyle" variant="secondary" size="sm">T</Button>
+          <Button onClick={() => update("Y")} id="buttonStyle" variant="secondary" size="sm">Y</Button>
+          <Button onClick={() => update("U")} id="buttonStyle" variant="secondary" size="sm">U</Button>
+          <Button onClick={() => update("I")} id="buttonStyle" variant="secondary" size="sm">I</Button>
+          <Button onClick={() => update("O")} id="buttonStyle" variant="secondary" size="sm">O</Button>
+          <Button onClick={() => update("P")} id="buttonStyle" variant="secondary" size="sm">P</Button>
+        </Col>
       </Row>
-      <Row>
-        <Button onClick={() => update("A")} as={Col} id="buttonStyle" variant="secondary" size="lg">A</Button>
-        <Button onClick={() => update("S")} as={Col} id="buttonStyle" variant="secondary" size="lg">S</Button>
-        <Button onClick={() => update("D")} as={Col} id="buttonStyle" variant="secondary" size="lg">D</Button>
-        <Button onClick={() => update("F")} as={Col} id="buttonStyle" variant="secondary" size="lg">F</Button>
-        <Button onClick={() => update("G")} as={Col} id="buttonStyle" variant="secondary" size="lg">G</Button>
-        <Button onClick={() => update("H")} as={Col} id="buttonStyle" variant="secondary" size="lg">H</Button>
-        <Button onClick={() => update("J")} as={Col} id="buttonStyle" variant="secondary" size="lg">J</Button>
-        <Button onClick={() => update("K")} as={Col} id="buttonStyle" variant="secondary" size="lg">K</Button>
-        <Button onClick={() => update("L")} as={Col} id="buttonStyle" variant="secondary" size="lg">L</Button>
+    </div>
+    <div id="row2">
+      <Row className="justify-content-center">
+        <Col>
+          <Button onClick={() => update("A")} id="buttonStyle" variant="secondary" size="sm">A</Button>
+          <Button onClick={() => update("S")} id="buttonStyle" variant="secondary" size="sm">S</Button>
+          <Button onClick={() => update("D")} id="buttonStyle" variant="secondary" size="sm">D</Button>
+          <Button onClick={() => update("F")} id="buttonStyle" variant="secondary" size="sm">F</Button>
+          <Button onClick={() => update("G")} id="buttonStyle" variant="secondary" size="sm">G</Button>
+          <Button onClick={() => update("H")} id="buttonStyle" variant="secondary" size="sm">H</Button>
+          <Button onClick={() => update("J")} id="buttonStyle" variant="secondary" size="sm">J</Button>
+          <Button onClick={() => update("K")} id="buttonStyle" variant="secondary" size="sm">K</Button>
+          <Button onClick={() => update("L")} id="buttonStyle" variant="secondary" size="sm">L</Button>
+        </Col>
       </Row>
-      <Row>
-        <Button onClick={() => setFlag(!flag)} as={Col} id="buttonStyle" variant="secondary" size="lg">ENTER</Button>
-        <Button onClick={() => update("Z")} as={Col} id="buttonStyle" variant="secondary" size="lg">Z</Button>
-        <Button onClick={() => update("X")} as={Col} id="buttonStyle" variant="secondary" size="lg">X</Button>
-        <Button onClick={() => update("C")} as={Col} id="buttonStyle" variant="secondary" size="lg">C</Button>
-        <Button onClick={() => update("V")} as={Col} id="buttonStyle" variant="secondary" size="lg">V</Button>
-        <Button onClick={() => update("B")} as={Col} id="buttonStyle" variant="secondary" size="lg">B</Button>
-        <Button onClick={() => update("N")} as={Col} id="buttonStyle" variant="secondary" size="lg">N</Button>
-        <Button onClick={() => update("M")} as={Col} id="buttonStyle" variant="secondary" size="lg">M</Button>
-        <Button onClick={() => update("?")} as={Col} id="buttonStyle" variant="secondary" size="lg">?</Button>
-        <Button onClick={() => setGuess(guess.slice(0, -1))} as={Col} id="buttonStyle" variant="secondary" size="lg"><FontAwesomeIcon icon={faDeleteLeft} /></Button>
+    </div>
+    <div id="row1">
+      <Row className="justify-content-center">
+        <Col>
+          <Button onClick={() => setFlag(!flag)} id="buttonStyle" variant="secondary" size="sm">ENTER</Button>
+          <Button onClick={() => update("Z")} id="buttonStyle" variant="secondary" size="sm">Z</Button>
+          <Button onClick={() => update("X")} id="buttonStyle" variant="secondary" size="sm">X</Button>
+          <Button onClick={() => update("C")} id="buttonStyle" variant="secondary" size="sm">C</Button>
+          <Button onClick={() => update("V")} id="buttonStyle" variant="secondary" size="sm">V</Button>
+          <Button onClick={() => update("B")} id="buttonStyle" variant="secondary" size="sm">B</Button>
+          <Button onClick={() => update("N")} id="buttonStyle" variant="secondary" size="sm">N</Button>
+          <Button onClick={() => update("M")} id="buttonStyle" variant="secondary" size="sm">M</Button>
+          <Button onClick={() => update("?")} id="buttonStyle" variant="secondary" size="sm">?</Button>
+          <Button onClick={() => setGuess(guess.slice(0, -1))} id="buttonStyle" variant="secondary" size="sm"><FontAwesomeIcon icon={faDeleteLeft} /></Button>
+        </Col>
       </Row>
     </div>
   </div>
