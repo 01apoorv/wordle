@@ -72,7 +72,8 @@ const App = () => {
           for (let i = 0; i < 5; i++) {
             if (gCur[i].length > 0 && check.includes(gCur[i])) {
               tmp[counter][i] = colors[3]
-              tmp2[gCur[i].codePointAt(0)] = "warning"
+              if (tmp2[gCur[i].codePointAt(0)] !== "success")
+                tmp2[gCur[i].codePointAt(0)] = "warning"
               check[check.indexOf(gCur[i])] = ''
               gCur[i] = ''
             }
