@@ -11,14 +11,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  position: relative;
-  width: 360px;
-  height: 640px;
-  margin: auto;
-  border: 16px black solid;
-  border-top-width: 60px;
-  border-bottom-width: 60px;
-  border-radius: 36px;
 }
 
 .game-board{ 
