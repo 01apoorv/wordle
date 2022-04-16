@@ -50,7 +50,6 @@ const App = () => {
       if (guess.length === 5 && guesses.has(guess)) {
         let tmp = [...status]
         let tmp2 = [...buttArr]
-        console.log(tmp2)
         let check = ans.split("")
         let gCur = guess.split("")
         for (let i = 0; i < 5; i++) {
