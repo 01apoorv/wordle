@@ -19,8 +19,8 @@ const App = () => {
   const keys = new Set('ABCDEFGHIJKLMNOPQRSTUVWXYZ?'.split(""))
   const message1 = "Is that even a word?"
   const message2 = "Not enough letters!"
-  const message3 = "I hope you can forgive me :)"
-  const message4 = "The word was \"SORRY\" and it was my way of apologizing :/"
+  const message3 = "Yes Meghan, this was my way of asking you on a date :)"
+  const message4 = "The word was \"DATE?\" and it was my way of asking you out :/"
   const [buttArr, setButtArr] = useState(() => {
     let tmp = []
     tmp[63] = "secondary"
@@ -32,7 +32,7 @@ const App = () => {
   const [currMsg, setCurrMsg] = useState("")
   const [gameOver, setGameOver] = useState(false)
   const [first, setFirst] = useState(true)
-  const ans = "SORRY"
+  const ans = "DATE?"
 
   useEffect(() => {
     const updateBoard = () => {
