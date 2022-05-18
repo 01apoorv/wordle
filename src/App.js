@@ -19,7 +19,7 @@ const App = () => {
   const keys = new Set('ABCDEFGHIJKLMNOPQRSTUVWXYZ?'.split(""))
   const message1 = "Is that even a word?"
   const message2 = "Not enough letters!"
-  const message3 = "Yes Meghan, this was my way of asking you on a date :)"
+  const message3 = ":)"
   const message4 = "The word was \"DATE?\" and it was my way of asking you out :/"
   const [buttArr, setButtArr] = useState(() => {
     let tmp = []
